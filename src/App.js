@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import s from './App.module.scss'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => (
+  <div className={s.wrapper}>
+    <div className={s.discovery}>
+      <h1>
+        Augmented Reality Proof of Concept
+      </h1>
+      <p>
+        To show this 3D element in AR, click the button.
+        It works only on devices that uses WebXR, Google Sceene Viewer or iOS Quick Look.
+      </p>
     </div>
-  );
-}
+    <model-viewer
+      src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+      alt="A 3D model of an astronaut"
+      ar
+      camera-controls
+      auto-rotate
+    >
+      <div className={s.placeholder}>
+        This is an example text displayed on Augmented Reality.
+      </div>
+    </model-viewer>
+  </div>
+);
 
-export default App;
+export default App

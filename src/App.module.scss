@@ -1,0 +1,41 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 15px;
+  width: 100vw;
+  height: 100vh;
+
+  > model-viewer {
+    height: 50%;
+    margin: 0 auto;
+
+    &[ar-status="not-presenting"] > .placeholder {
+      display: none;
+    }
+  }
+
+  .discovery {
+    > h1 {
+      text-align: center;
+    }
+  
+    > p {
+      margin: 20px 0;
+    }
+  }
+
+  .placeholder {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 20px;
+    text-align: 'center';
+  }
+}
+
