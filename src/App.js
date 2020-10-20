@@ -15,6 +15,7 @@ const App = () => (
     <model-viewer
       src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
       ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+      quick-look-browsers="safari chrome"
       alt="A 3D model of an astronaut"
       ar
       camera-controls
