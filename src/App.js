@@ -9,7 +9,7 @@ const App = () => (
       </h1>
       <p>
         To show this 3D element in AR, click the button.
-        It works only on devices that uses WebXR, Google Sceene Viewer or iOS Quick Look.
+        It works only on devices that uses WebXR, Google Scene Viewer or iOS Quick Look.
       </p>
     </div>
     <model-viewer
